@@ -1,0 +1,68 @@
+body {
+    background-image: url('bg.svg');
+    background-repeat: repeat;
+    background-size: 88px;
+    background-position: center;
+}
+
+:root {
+    --bg: yellow;
+
+  label {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  input {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .confetti-container {
+    user-select: none;
+    pointer-events: none;
+    z-index: 10;
+  }
+  .confetti {
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+  }
+
+  .confetti .square {
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--bg);
+    transform: rotate(140deg);
+  }
+
+  .confetti .rectangle {
+    width: 1rem;
+    height: 0.5rem;
+    background-color: var(--bg);
+  }
+
+  .confetti i {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0.2rem;
+    animation-name: confetti;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: calc(60s / var(--speed));
+  }
+  .confetti i:nth-child(even) {
+    transform: rotate(90deg);
+  }
+  @keyframes confetti {
+    0% {
+      transform: translateY(-100vh);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+}
+
