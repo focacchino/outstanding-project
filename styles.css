@@ -1,3 +1,21 @@
+@import url(https://fonts.googleapis.com/css2?family=Comfortaa);
+
+@font-face {
+  font-family: "Regista";
+  src:url(Regista.ttf);
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+.text {
+  font-family: Comfortaa;
+  box-sizing: border-box;
+  text-align: center;
+  color: rgb(28, 28, 28);
+  font-size: small;
+  margin-top: 0px;
+}
+
 body {
     background-image: url('bg.svg');
     background-repeat: repeat;
@@ -66,3 +84,45 @@ body {
   }
 }
 
+.box {
+  width: 20rem;
+  height: 10rem;
+  padding: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Add this line */
+  background-color: whitesmoke;
+  opacity: 75%;
+  border: 1px solid gray;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px rgb(206, 206, 206);
+}
+
+
+.heading {
+  font-family: "Regista";
+  color: rgb(28, 28, 28);
+  text-align: center;
+  font-size: xx-large; 
+  padding: 0px; 
+  margin: 0px; 
+}
+
+.form {
+  font-family: Comfortaa;
+  box-sizing: border-box;
+  text-align: center;
+  color: rgb(28, 28, 28);
+  font-size: medium;
+}
+
+.btn {
+  margin-top: 10px;
+  font-family: Comfortaa;
+  color: rgb(253, 245, 245);
+  padding: 5px;
+  background-color: rgb(149, 149, 149);
+  border-radius: 5px 5px 5px;
+  border: 1px;
+}
